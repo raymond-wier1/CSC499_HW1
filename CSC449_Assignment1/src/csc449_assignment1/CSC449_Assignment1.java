@@ -31,11 +31,35 @@ public class CSC449_Assignment1 {
                 case 1:
                     Names.sort(Comparator.comparing(String::length).thenComparing(String::compareTo));
                     System.out.println(Names);
+                    FileReader check1 = new FileReader("Sorted_Text1.txt");
+                    Scanner file2 = new Scanner(check1);
+                    List<String> Sorted1=new ArrayList<>();
+                    while( file2.hasNextLine() ) {
+                        String q = file2.nextLine();
+                        q = q.replaceAll("\\s", "");
+                        Sorted1.add(q);
+                    }
+                    if(Names.equals(Sorted1))
+                        System.out.println("The sort was successful");
+                    else
+                        System.out.println("Error: Sorting was incorrect");
                     break;
                 case 2:
                     Names.sort(Comparator.comparing(String::length).thenComparing(String::compareTo));
                     Collections.reverse(Names);
                     System.out.println(Names);
+                    FileReader check2 = new FileReader("Sorted_Text2.txt");
+                    Scanner file3 = new Scanner(check2);
+                    List<String> Sorted2=new ArrayList<>();
+                    while( file3.hasNextLine() ) {
+                        String q = file3.nextLine();
+                        q = q.replaceAll("\\s", "");
+                        Sorted2.add(q);
+                    }
+                    if(Names.equals(Sorted2))
+                        System.out.println("The sort was successful");
+                    else
+                        System.out.println("Error: Sorting was incorrect");
                     break;
                 default:
                     break;
