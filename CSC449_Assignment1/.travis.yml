@@ -1,4 +1,4 @@
 language: java
 
 script:
-  - CSC449_Assignment1/dist/execution.bat
+  -jar CSC449_Assignment1.jar
