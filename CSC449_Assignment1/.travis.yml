@@ -1,4 +1,4 @@
 language: java
 
 script:
-  -jar CSC449_Assignment1.jar
+  -jar CSC449_Assignment1/dist/CSC449_Assignment1.jar
