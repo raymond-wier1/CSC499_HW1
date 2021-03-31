@@ -1,5 +1,4 @@
 language: java
 
 script:
-  - cd dist
-  - java CSC449.Assignment1.jar
+  - ./execution.bat
