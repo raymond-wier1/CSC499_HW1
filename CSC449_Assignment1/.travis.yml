@@ -1,1 +1,4 @@
 language: java
+
+script:
+  -src/csc449_assignment1/CSC449_Assignment1.java
