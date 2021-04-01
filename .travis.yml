@@ -1,1 +1,4 @@
 language: java
+
+script:
+  - ./CSC449_Assignment1.jar
