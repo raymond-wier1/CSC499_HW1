@@ -1,4 +1,5 @@
 language: java
 
 script:
+  chmod u+r+x execution.sh
   - ./execution.sh
