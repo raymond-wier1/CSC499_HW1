@@ -1,4 +1,4 @@
-language: jar
+language: java
 
 script:
   - ./execution.bat
